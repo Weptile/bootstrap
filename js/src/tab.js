@@ -22,7 +22,7 @@ const JQUERY_NO_CONFLICT = $.fn[NAME]
 const CLASS_NAME_DROPDOWN_MENU = 'dropdown-menu'
 const CLASS_NAME_ACTIVE = 'active'
 const CLASS_NAME_DISABLED = 'disabled'
-const CLASS_NAME_FADE = 'weptile-fade'
+const CLASS_NAME_FADE = 'fade'
 const CLASS_NAME_SHOW = 'show'
 
 const EVENT_HIDE = `hide${EVENT_KEY}`

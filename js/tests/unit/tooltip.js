@@ -118,7 +118,7 @@ $(function () {
 
     $tooltip
       .one('shown.bs.tooltip', function () {
-        assert.true($('.tooltip').is('.weptile-fade.bs-tooltip-bottom.show'), 'has correct classes applied')
+        assert.true($('.tooltip').is('.fade.bs-tooltip-bottom.show'), 'has correct classes applied')
 
         $tooltip.bootstrapTooltip('hide')
       })
@@ -361,7 +361,7 @@ $(function () {
       })
       .bootstrapTooltip('toggle')
 
-    assert.true($('.tooltip').is('.weptile-fade.show'), 'tooltip is faded active')
+    assert.true($('.tooltip').is('.fade.show'), 'tooltip is faded active')
   })
 
   QUnit.test('should hide previously shown tooltip when toggle is called on tooltip', function (assert) {
@@ -374,7 +374,7 @@ $(function () {
       .bootstrapTooltip('show')
 
     $('.tooltip').bootstrapTooltip('toggle')
-    assert.ok($('.tooltip').not('.weptile-fade.show'), 'tooltip was faded out')
+    assert.ok($('.tooltip').not('.fade.show'), 'tooltip was faded out')
   })
 
   QUnit.test('should place tooltips inside body when container is body', function (assert) {
@@ -564,11 +564,11 @@ $(function () {
       })
 
     setTimeout(function () {
-      assert.false($('.tooltip').is('.weptile-fade.show'), '100ms: tooltip is not faded active')
+      assert.false($('.tooltip').is('.fade.show'), '100ms: tooltip is not faded active')
     }, 100)
 
     setTimeout(function () {
-      assert.true($('.tooltip').is('.weptile-fade.show'), '200ms: tooltip is faded active')
+      assert.true($('.tooltip').is('.fade.show'), '200ms: tooltip is faded active')
       done()
     }, 200)
 
@@ -586,12 +586,12 @@ $(function () {
       })
 
     setTimeout(function () {
-      assert.false($('.tooltip').is('.weptile-fade.show'), '100ms: tooltip not faded active')
+      assert.false($('.tooltip').is('.fade.show'), '100ms: tooltip not faded active')
       $tooltip.trigger('mouseout')
     }, 100)
 
     setTimeout(function () {
-      assert.false($('.tooltip').is('.weptile-fade.show'), '200ms: tooltip not faded active')
+      assert.false($('.tooltip').is('.fade.show'), '200ms: tooltip not faded active')
       done()
     }, 200)
 
@@ -612,16 +612,16 @@ $(function () {
       })
 
     setTimeout(function () {
-      assert.true($('.tooltip').is('.weptile-fade.show'), '1ms: tooltip faded active')
+      assert.true($('.tooltip').is('.fade.show'), '1ms: tooltip faded active')
       $tooltip.trigger('mouseout')
 
       setTimeout(function () {
-        assert.true($('.tooltip').is('.weptile-fade.show'), '100ms: tooltip still faded active')
+        assert.true($('.tooltip').is('.fade.show'), '100ms: tooltip still faded active')
         $tooltip.trigger('mouseenter')
       }, 100)
 
       setTimeout(function () {
-        assert.true($('.tooltip').is('.weptile-fade.show'), '200ms: tooltip still faded active')
+        assert.true($('.tooltip').is('.fade.show'), '200ms: tooltip still faded active')
         done()
       }, 200)
     }, 0)
@@ -643,12 +643,12 @@ $(function () {
       })
 
     setTimeout(function () {
-      assert.false($('.tooltip').is('.weptile-fade.show'), '100ms: tooltip not faded active')
+      assert.false($('.tooltip').is('.fade.show'), '100ms: tooltip not faded active')
       $tooltip.trigger('mouseout')
     }, 100)
 
     setTimeout(function () {
-      assert.false($('.tooltip').is('.weptile-fade.show'), '250ms: tooltip not faded active')
+      assert.false($('.tooltip').is('.fade.show'), '250ms: tooltip not faded active')
       done()
     }, 250)
 
@@ -669,12 +669,12 @@ $(function () {
       })
 
     setTimeout(function () {
-      assert.true($($tooltip.data('bs.tooltip').tip).is('.weptile-fade.show'), '1ms: tooltip faded active')
+      assert.true($($tooltip.data('bs.tooltip').tip).is('.fade.show'), '1ms: tooltip faded active')
 
       $tooltip.trigger('mouseout')
 
       setTimeout(function () {
-        assert.true($($tooltip.data('bs.tooltip').tip).is('.weptile-fade.show'), '100ms: tooltip still faded active')
+        assert.true($($tooltip.data('bs.tooltip').tip).is('.fade.show'), '100ms: tooltip still faded active')
       }, 100)
 
       setTimeout(function () {
@@ -917,7 +917,7 @@ $(function () {
         var tooltip = $el.data('bs.tooltip')
         var $tooltip = $(tooltip.getTipElement())
         assert.true($tooltip.hasClass('tooltip'))
-        assert.true($tooltip.hasClass('weptile-fade'))
+        assert.true($tooltip.hasClass('fade'))
         done()
       })
 

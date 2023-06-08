@@ -531,7 +531,7 @@ If you want for example a zoom-in animation, you can set `$modal-fade-transform:
 
 ### Remove animation
 
-For modals that simply appear rather than fade in to view, remove the `.weptile-fade` class from your modal markup.
+For modals that simply appear rather than fade in to view, remove the `.fade` class from your modal markup.
 
 ```html
 <div class="modal" tabindex="-1" aria-labelledby="..." aria-hidden="true">

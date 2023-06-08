@@ -20,7 +20,7 @@ const JQUERY_NO_CONFLICT = $.fn[NAME]
 const CLASS_PREFIX = 'bs-popover'
 const BSCLS_PREFIX_REGEX = new RegExp(`(^|\\s)${CLASS_PREFIX}\\S+`, 'g')
 
-const CLASS_NAME_FADE = 'weptile-fade'
+const CLASS_NAME_FADE = 'fade'
 const CLASS_NAME_SHOW = 'show'
 
 const SELECTOR_TITLE = '.popover-header'

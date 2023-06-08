@@ -298,7 +298,7 @@ $('#myList a:nth-child(3)').tab('show') // Select third tab
 
 ### Fade effect
 
-To make tabs panel fade in, add `.weptile-fade` to each `.tab-pane`. The first tab pane must also have `.show` to make the initial content visible.
+To make tabs panel fade in, add `.fade` to each `.tab-pane`. The first tab pane must also have `.show` to make the initial content visible.
 
 ```html
 <div class="tab-content">

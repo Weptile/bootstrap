@@ -41,7 +41,7 @@
   pointer-events: none;
 
   // When fading in the modal, animate it to slide down
-  .modal.weptile-fade & {
+  .modal.fade & {
     @include transition($modal-transition);
     transform: $modal-fade-transform;
   }
@@ -132,7 +132,7 @@
   background-color: $modal-backdrop-bg;
 
   // Fade for backdrop
-  &.weptile-fade { opacity: 0; }
+  &.fade { opacity: 0; }
   &.show { opacity: $modal-backdrop-opacity; }
 }
 

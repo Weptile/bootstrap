@@ -91,7 +91,7 @@ $(function () {
       .appendTo($('#qunit-fixture'))
 
     $toast.on('shown.bs.toast', function () {
-      assert.false($toast.hasClass('weptile-fade'))
+      assert.false($toast.hasClass('fade'))
       done()
     })
       .bootstrapToast('show')

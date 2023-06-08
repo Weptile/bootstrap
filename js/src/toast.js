@@ -18,7 +18,7 @@ const DATA_KEY = 'bs.toast'
 const EVENT_KEY = `.${DATA_KEY}`
 const JQUERY_NO_CONFLICT = $.fn[NAME]
 
-const CLASS_NAME_FADE = 'weptile-fade'
+const CLASS_NAME_FADE = 'fade'
 const CLASS_NAME_HIDE = 'hide'
 const CLASS_NAME_SHOW = 'show'
 const CLASS_NAME_SHOWING = 'showing'

@@ -122,7 +122,7 @@ $(function () {
       })
       .on('shown.bs.modal', function () {
         assert.true(prevented, 'show prevented')
-        assert.true($el.hasClass('weptile-fade'))
+        assert.true($el.hasClass('fade'))
         done()
       })
       .bootstrapModal('show')
@@ -717,7 +717,7 @@ $(function () {
     var done = assert.async()
     var style = [
       '<style>',
-      '  .modal.weptile-fade .modal-dialog {',
+      '  .modal.fade .modal-dialog {',
       '    transition: -webkit-transform .3s ease-out;',
       '    transition: transform .3s ease-out;',
       '    transition: transform .3s ease-out,-webkit-transform .3s ease-out;',

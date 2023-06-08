@@ -23,7 +23,7 @@ const CLASS_PREFIX = 'bs-tooltip'
 const BSCLS_PREFIX_REGEX = new RegExp(`(^|\\s)${CLASS_PREFIX}\\S+`, 'g')
 const DISALLOWED_ATTRIBUTES = ['sanitize', 'whiteList', 'sanitizeFn']
 
-const CLASS_NAME_FADE = 'weptile-fade'
+const CLASS_NAME_FADE = 'fade'
 const CLASS_NAME_SHOW = 'show'
 
 const HOVER_STATE_SHOW = 'show'

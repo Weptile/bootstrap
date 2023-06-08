@@ -413,14 +413,14 @@ $(function () {
     $(tabsHTML).appendTo('#qunit-fixture')
     $('#tab-profile')
       .on('shown.bs.tab', function () {
-        assert.true($('#profile').hasClass('weptile-fade'))
+        assert.true($('#profile').hasClass('fade'))
         assert.true($('#profile').hasClass('show'))
 
         $('#tab-home')
           .on('shown.bs.tab', function () {
-            assert.true($('#profile').hasClass('weptile-fade'))
+            assert.true($('#profile').hasClass('fade'))
             assert.false($('#profile').hasClass('show'))
-            assert.true($('#home').hasClass('weptile-fade'))
+            assert.true($('#home').hasClass('fade'))
             assert.true($('#home').hasClass('show'))
 
             done()
@@ -475,7 +475,7 @@ $(function () {
       .trigger($.Event('click'))
   })
 
-  QUnit.test('should not add show class to tab panes if there is no `.weptile-fade` class', function (assert) {
+  QUnit.test('should not add show class to tab panes if there is no `.fade` class', function (assert) {
     assert.expect(1)
     var done = assert.async()
 
@@ -503,7 +503,7 @@ $(function () {
       .trigger($.Event('click'))
   })
 
-  QUnit.test('should add show class to tab panes if there is a `.weptile-fade` class', function (assert) {
+  QUnit.test('should add show class to tab panes if there is a `.fade` class', function (assert) {
     assert.expect(1)
     var done = assert.async()
 

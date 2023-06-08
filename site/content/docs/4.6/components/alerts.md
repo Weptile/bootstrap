@@ -61,7 +61,7 @@ Using the alert JavaScript plugin, it's possible to dismiss any alert inline. He
 - If you're building our JavaScript from source, it [requires `util.js`]({{< docsref "/getting-started/javascript#util" >}}). The compiled version includes this.
 - Add a dismiss button and the `.alert-dismissible` class, which adds extra padding to the right of the alert and positions the `.close` button.
 - On the dismiss button, add the `data-dismiss="alert"` attribute, which triggers the JavaScript functionality. Be sure to use the `<button>` element with it for proper behavior across all devices.
-- To animate alerts when dismissing them, be sure to add the `.weptile-fade` and `.show` classes.
+- To animate alerts when dismissing them, be sure to add the `.fade` and `.show` classes.
 
 You can see this in action with a live demo:
 
@@ -99,7 +99,7 @@ Note that closing an alert will remove it from the DOM.
 | Method | Description |
 | --- | --- |
 | `$().alert()` | Makes an alert listen for click events on descendant elements which have the `data-dismiss="alert"` attribute. (Not necessary when using the data-api's auto-initialization.) |
-| `$().alert('close')` | Closes an alert by removing it from the DOM. If the `.weptile-fade` and `.show` classes are present on the element, the alert will fade out before it is removed. |
+| `$().alert('close')` | Closes an alert by removing it from the DOM. If the `.fade` and `.show` classes are present on the element, the alert will fade out before it is removed. |
 | `$().alert('dispose')` | Destroys an element's alert. |
 
 ```js

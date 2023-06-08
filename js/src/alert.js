@@ -20,7 +20,7 @@ const DATA_API_KEY = '.data-api'
 const JQUERY_NO_CONFLICT = $.fn[NAME]
 
 const CLASS_NAME_ALERT = 'alert'
-const CLASS_NAME_FADE = 'weptile-fade'
+const CLASS_NAME_FADE = 'fade'
 const CLASS_NAME_SHOW = 'show'
 
 const EVENT_CLOSE = `close${EVENT_KEY}`
